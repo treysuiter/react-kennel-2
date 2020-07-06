@@ -1,11 +1,11 @@
 import React from "react";
 
-const EmployeeCard = () => {
+const EmployeeCard = props => {
   return (
     <div className="card">
       <div className="card-content">
         <h3>
-          Employee Card
+          {props.employee.name}
         </h3>
       </div>
     </div>

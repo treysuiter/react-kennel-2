@@ -1,11 +1,11 @@
 import React from "react";
 
-const LocationCard = () => {
+const LocationCard = props => {
   return (
     <div className="card">
       <div className="card-content">
         <h3>
-          Location Card
+          {props.location.name}
         </h3>
       </div>
     </div>
