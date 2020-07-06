@@ -7,6 +7,7 @@ const EmployeeCard = props => {
         <h3>
           {props.employee.name}
         </h3>
+        <button type="button" onClick={() => props.fireEmployee(props.employee.id)}>Fire</button>
       </div>
     </div>
   );

@@ -7,6 +7,7 @@ const LocationCard = props => {
         <h3>
           {props.location.name}
         </h3>
+        <button type="button" onClick={() => props.closeLocation(props.location.id)}>Close</button>
       </div>
     </div>
   );

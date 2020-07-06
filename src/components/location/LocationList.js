@@ -16,6 +16,12 @@ const LocationList = () => {
       setLocations(locationsFromAPI)
     });
   };
+  const closeLocation = id => {
+    AnimalManager.delete(endpoint, id)
+      .then(() => AnimalManager.getAll(endpoint)
+      .then(setLocations));
+  };
+
 
   // got the locations from the API on the component's first render
   useEffect(() => {
@@ -26,7 +32,7 @@ const LocationList = () => {
   return (
     <div className="container-cards">
       {locations.map(location => 
-      <LocationCard key={location.id} location={location}/>)}
+      <LocationCard key={location.id} location={location} closeLocation={closeLocation}/>)}
     </div>
   );
 };
