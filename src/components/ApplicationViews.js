@@ -4,6 +4,7 @@ import Home from "./home/Home";
 import AnimalList from "./animal/AnimalList";
 import AnimalDetail from "./animal/AnimalDetail";
 import AnimalForm from './animal/AnimalForm'
+import AnimalEditForm from './animal/AnimalEditForm'
 //only include these once they are built - previous practice exercise
 import LocationList from "./location/LocationList";
 import LocationDetail from "./location/LocationsDetail"
@@ -21,7 +22,6 @@ const ApplicationViews = () => {
     return (
         <React.Fragment>
 
-            {/* <Route path="/login" render={props => {return <Login {...props}/>}} /> */}
             <Route path="/login" component={Login} />
 
             <Route
@@ -39,14 +39,23 @@ const ApplicationViews = () => {
                 }
             }} />
             <Route
+                exact
                 path="/animals/:animalId(\d+)"
                 render={props => {
-                        // Pass the animalId to the AnimalDetailComponent
-                        return <AnimalDetail animalId={parseInt(props.match.params.animalId)} {...props} />
+                    // Pass the animalId to the AnimalDetailComponent
+                    return <AnimalDetail animalId={parseInt(props.match.params.animalId)} {...props} />
                 }} />
 
             <Route path="/animals/new" render={props => {
                 return <AnimalForm {...props} />
+            }} />
+
+            <Route path="/animals/:animalId(\d+)/edit" render={props => {
+                if (isAuthenticated()) {
+                    return <AnimalEditForm {...props} />
+                } else {
+                    return <Redirect to="/login" />
+                }
             }} />
 
             <Route
