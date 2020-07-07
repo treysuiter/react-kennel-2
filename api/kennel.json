@@ -1,20 +1,77 @@
 {
-    "animals": [
-        { "id": 1, "name": "doodles", "breed": "Poodle"},
-        { "id": 2, "name": "decker", "breed": "German Shepherd" },
-        { "id": 3, "name": "esme", "breed": "Pitbull" }
-    ],
-    "owners": [
-        { "id": 1, "name": "Tim", "phoneNumber": "615-111-2222"},
-        { "id": 2, "name": "Jim", "phoneNumber": "615-222-3333"},
-        { "id": 3, "name": "Jan", "phoneNumber": "615-333-4444"}
-    ],
-    "locations": [
-        { "id": 1, "name": "Location 1", "address": "123 Street St"},
-        { "id": 2, "name": "Location 2", "address": "345 Road Rd"}
-    ],
-    "employees": [
-        { "id": 1, "name": "Employee Dude"},
-        { "id": 2, "name": "Employee Lady"}
-    ]
+  "animals": [
+    {
+      "id": 1,
+      "name": "doodles",
+      "breed": "Poodle"
+    },
+    {
+      "id": 2,
+      "name": "decker",
+      "breed": "German Shepherd"
+    },
+    {
+      "id": 3,
+      "name": "esme",
+      "breed": "Pitbull"
+    },
+    {
+      "name": "fred",
+      "breed": "giant thing",
+      "id": 4
+    }
+  ],
+  "owners": [
+    {
+      "id": 1,
+      "name": "Tim",
+      "phoneNumber": "615-111-2222"
+    },
+    {
+      "id": 2,
+      "name": "Jim",
+      "phoneNumber": "615-222-3333"
+    },
+    {
+      "id": 3,
+      "name": "Jan",
+      "phoneNumber": "615-333-4444"
+    },
+    {
+      "name": "New Dude",
+      "phoneNumber": "999-999-9999",
+      "id": 4
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Location 1",
+      "address": "123 Street St"
+    },
+    {
+      "id": 2,
+      "name": "Location 2",
+      "address": "345 Road Rd"
+    },
+    {
+      "name": "Location 3",
+      "address": "Some dang street",
+      "id": 3
+    }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "name": "Employee Dude"
+    },
+    {
+      "id": 2,
+      "name": "Employee Lady"
+    },
+    {
+      "name": "New Employee 3",
+      "id": 3
+    }
+  ]
 }
