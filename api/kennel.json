@@ -10,8 +10,8 @@
         { "id": 3, "name": "Jan", "phoneNumber": "615-333-4444"}
     ],
     "locations": [
-        { "id": 1, "name": "Location 1"},
-        { "id": 2, "name": "Location 2"}
+        { "id": 1, "name": "Location 1", "address": "123 Street St"},
+        { "id": 2, "name": "Location 2", "address": "345 Road Rd"}
     ],
     "employees": [
         { "id": 1, "name": "Employee Dude"},
